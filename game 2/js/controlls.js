@@ -12,7 +12,13 @@ function control(){
         player.velX+=player.speed;
     }
     if(keys[32]==true){//spacebar
-
+        zmagal=false;
+    }
+    if(keys[17]==true){
+        player.speed+=0.1;
+    }
+    if(keys[16]==true){
+        player.speed-=0.1;
     }
     player.velX*=0.8;
     player.velY*=0.8;

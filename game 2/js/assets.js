@@ -24,4 +24,6 @@ var zoga=new Image();
 zoga.src="sprite/ball.png";
 balls=[];
 walls=[];
+var zmaga=new Image();
+zmaga.src="sprite/zmaga.png";
 

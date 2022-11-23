@@ -5,4 +5,7 @@ function draw(){
     }
 
     ctx.drawImage(redpig, player.x, player.y);
+    if(zmagal){
+        ctx.drawImage(zmaga,zmagax,zmagay)
+    }
 }
