@@ -29,5 +29,17 @@ function objectCollision(){
     }
 }
 function wallCollision(){
-    
+    for(let i=0;i<balls.length;i++){
+        if(balls[i].x>width-300&&balls[i].y>height-300){
+            balls[i].velY*=0.9;
+            balls[i].velX*=0.9;
+        }
+        if(balls[i].y<height-300&&balls[i].y>height-310&&balls[i].x>width-300&&wallHit==false){
+            balls[i].velY*=-1;
+            wallHit=true;
+        }
+        if(!(balls[i].y<height-300&&balls[i].y>height-310&&balls[i].x>width-300)){
+            wallHit=false;
+        }
+    }
 }

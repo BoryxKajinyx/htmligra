@@ -3,7 +3,7 @@ canvas.height=height;
 for(let x=0;x<50;x++){
     balls[x]={x:100,y:100,velX:0,velY:0,width:50,height:50}
 }
-wall1={x:200,y:0,width:20,height:200};
+wallHit=false;
 function update(){
     draw();
     control();
