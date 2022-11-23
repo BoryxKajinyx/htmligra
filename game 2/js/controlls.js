@@ -12,7 +12,12 @@ function control(){
         player.velX+=player.speed;
     }
     if(keys[32]==true){//spacebar
-        zmagal=false;
+        if(zmagal=true){
+            zmagal=false;
+            for(let i=0;i<balls.length;i++){
+                balls[x]={x:100,y:100,velX:0,velY:0,width:50,height:50}
+            }
+        }
     }
     if(keys[17]==true){
         player.speed+=0.1;
