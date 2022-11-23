@@ -12,10 +12,11 @@ function control(){
         player.velX+=player.speed;
     }
     if(keys[32]==true){//spacebar
+        console.log("reset")
         if(zmagal=true){
             zmagal=false;
             for(let i=0;i<balls.length;i++){
-                balls[x]={x:100,y:100,velX:0,velY:0,width:50,height:50}
+                balls[i]={x:100,y:100,velX:0,velY:0,width:50,height:50}
             }
         }
     }
